@@ -36,4 +36,3 @@ go run main.go
 ```shell 
 go build -tags netgo -ldflags '-s -w' -o gin_web_webcam main.go
 ```
-
