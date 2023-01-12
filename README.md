@@ -1,4 +1,4 @@
-# gin_web_webcam
+# gin_web_webcam 结构
 
 ```
 ├── README.md
@@ -14,3 +14,27 @@
     ├── index.js
     └── webcam.min.js
 ```
+## 先决条件
+
+ - goline编译器
+
+### 初始化
+
+```shell
+go mod download
+go mod tidy
+```
+
+## 运行命令
+
+```shell
+go run main.go
+```
+
+## 构建命令
+
+```shell 
+go build -tags netgo -ldflags '-s -w' -o gin_web_webcam main.go
+```
+
+## 本项目只用于学习一切法律责任与本人无关
