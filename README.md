@@ -37,4 +37,3 @@ go run main.go
 go build -tags netgo -ldflags '-s -w' -o gin_web_webcam main.go
 ```
 
-## 本项目只用于学习一切法律责任与本人无关
