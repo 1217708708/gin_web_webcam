@@ -2,15 +2,14 @@
 
 ```
 ├── README.md
-├── __debug_bin
 ├── go.mod
 ├── go.sum
-├── image
+├── image # 图像存储文件
 ├── main.go
 ├── src
-│   └── router
+│   └── router # 后端路由
 │       └── route.go
-└── static
+└── static # 静态文件
     ├── index.html
     ├── index.js
     └── webcam.min.js
