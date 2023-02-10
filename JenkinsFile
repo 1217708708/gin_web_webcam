@@ -1,0 +1,33 @@
+pipeline{
+    agent any
+    stages{
+        stage("拉取git代码仓库"){
+            steps{
+                echo "========executing dev========"
+                
+            }
+            post{
+                always{
+                    echo "========always========"
+                }
+                success{
+                    echo "========dev executed successfully========"
+                }
+                failure{
+                    echo "========dev execution failed========"
+                }
+            }
+        }
+    }
+    post{
+        always{
+            echo "========always========"
+        }
+        success{
+            echo "========pipeline executed successfully ========"
+        }
+        failure{
+            echo "========pipeline execution failed========"
+        }
+    }  
+}

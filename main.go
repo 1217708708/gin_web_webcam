@@ -12,5 +12,6 @@ func main() {
 	r = gin.Default()
 	router.Init(r)
 	// Listen and Server in 0.0.0.0:8080
+	r.Use(gin.Logger())
 	r.Run(":8080")
 }
